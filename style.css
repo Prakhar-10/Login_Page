@@ -1,114 +1,139 @@
+.row{
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 .left,.right{
-    height: 50vh ;
+    height: 100% ;
     width: 100%;
 }
 
-@media screen and (min-width:768px){
+@media only screen and (max-width:768px){
     .left,.right{
+        display: flex;
         height: 100vh;
+    }
+    form .pass{
+        display: flex;
+        font-size: 12px;
+        text-align: right;
+        
+    }
+    footer{
+        display:flex;
+        padding-right: 10px;
+        text-align: right;
     }
 }
 
 .left{
     background-color: blueviolet;
-    
 }
 
 .right{
     background-color: white;
     flex-direction: column;
+    
 }
+
 .left h2{
+    color: azure;
+    left:60px;
     position: absolute;
     top:60px;
-    left:60px;
-    color: azure;
 }
+
 .left h1{
+    border-bottom: 1px solid white;
     color: azure;
+    left:60px;
     position: absolute;
     top:100px;
-    left:60px;
-    border-bottom: 1px solid white;
 }
+
 .left h3{
     color: azure;
+    left:60px;
+    padding-top: 10px;
     position: absolute;
     top:150px;
-    left:60px;
 }
+
+.c-para{
+    color: azure;
+    right: 20px;
+}
+
 .left p{
+    left: 50px;
+    padding-right: 15px;
+    padding-top: 20px;
     position: absolute;
-    left:70px;
-    top :220px;
-    padding: 10px;
-}
-#second{
-    padding: 20px;
-    position: absolute;
-    left: 60px;
-    top:320px;
+    top: 220px;
 }
 
 .right h1{
-    text-align: center;
-    padding: 0 0 20px 0;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .right form{
-    
+    align-items: center;
     box-sizing: border-box;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8px;
     padding: 10px 10px;
-    margin: 8px ;
-    
+    width: 50%;
     
 }
 
 form .txt_field{
-    position: relative;
-    background-origin: 2px solid;
-    margin: 30px 0;
+    margin: 10px 0;
+    width: 100%;
 }
 
 .txt_field input{
-    width: 100%;
-    padding: 0 5px;
+    color: grey;
+    font-size: 16px;
     height: 40px;
-    font-size: 16px;
-
+    padding: 0 5px 5px;
+    width: 100%;
 }
 
-.txt_field label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    font-size: 16px;
-
-}
 form .pass{
-    
-    float: right;
     color: blueviolet;
-    
+    display: flex;  
+    float: right;
+    justify-content: flex-end;
+    width: 100%;
 }
 
-input[type = "submit"]{
-    width: 40%;
-    float: right;
+.c-submit{
+    left: 60px;
     padding: 5px;
+    width: 40%; 
 }
 
 .footer{
-    float: right;
-    bottom : 10px;
-    position: absolute;
-    left: 150px;
+    bottom: 0px; 
+    color: grey;
     
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 
 .header{
+    display: flex;
     float:right;
-
+    padding-right: 10px;
+    padding-top: 10px;
 }
+
