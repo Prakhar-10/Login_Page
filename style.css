@@ -1,5 +1,6 @@
 .row {
   display: flex;
+  font-family: 'Roboto', sans-serif;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -20,19 +21,62 @@
   .col-lg-8 {
     display: none;
   }
+
+  .line{
+    display: none;
+  }
         
   .left {
     display: flex;
     height: 100vh;
   }
+  
+  .l-head-1 {
+    color: azure;
+    display: flex;
+    font-weight: 400;
+    font-size: 3.5rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+    position: absolute;
+    top: 4.2rem;
+    width: 35%;
+  }
+
+  .l-head-2 {
+    color: azure;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 400;
+    justify-content: center;
+    padding-left: 13rem;
+    margin-right: 12rem;
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+  }
+
+  .l-head-3 {
+    color: azure;
+    display: flex;
+    font-weight: 400;
+    justify-content: center;
+    margin-right: 16rem;
+    padding-left: 15rem;
+    padding-top: 1.5rem;
+    position: absolute;
+    top: 7.5rem;
+    width: 60%;
+  }
 
   .l-description {
     align-self: baseline;
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
     margin-left: 2rem;
     margin-right: 2rem;
-    padding-top: 9rem;
+    padding-top: 8.5rem;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -66,6 +110,10 @@
     padding-left: 1rem;
     width: 100%;
   }
+
+  .l-foot {
+    margin-top: 1rem;   
+  }
     
   .l-footer {
     color: white;
@@ -77,24 +125,57 @@
     text-align: center;
     width: 100%;
   }
+
+  .l-sup {
+    font-size: 0.7rem;
+    vertical-align: super;
+  }
+
 }
 
 @media screen and (min-width:766px) and (max-width:820px) {
   .l-head-1 {
     color: azure;
-    font-size: 4rem;
+    display: flex;
+    font-weight: 400;
+    font-size: 4.5rem;
+    justify-content: center;
     position: absolute;
+    top: 4.8rem;
+    width: 100%;
   }
   
   .l-head-2 {
+    color: azure;
+    display: flex;
     font-size: 2rem;
+    font-weight: 400;
+    justify-content: center;
+    margin-right: 12rem;
+    padding-left: 15rem;
+    position: absolute;
+    top: 3rem;
+    width: 100%;
   }
   
   .l-head-3 {
-    font-size: 3rem;
-    margin-top: 0.5rem;
+    color: azure;
+    display: flex;
+    font-weight: 400;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-left: 17rem;
+    padding-top: 2rem;
+    position: absolute;
+    margin-right: 16rem;
+    top: 7.5rem;
+    width: 85%;
   }
   
+  .line{
+    display: none;
+  }
+        
   .col-lg-8 {
     display: none;
   }
@@ -106,7 +187,7 @@
 
   .form-2 {
     background-color: white;
-    border-radius: 20px;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     height: 40vh;
@@ -117,7 +198,7 @@
     
   .l-head-4 {
     display: flex;
-    font-size: 40px;
+    font-size: 3rem;
     height: 20%;
     justify-content: center;
     width: 100%;
@@ -137,10 +218,13 @@
     color: azure;
     display: flex;
     font-size: 1.7rem;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 23rem;
+    padding-bottom: 22rem;
     position: absolute;
     text-align: center;
+  }
+
+  .l-foot {
+     margin-top: 1rem;   
   }
 
   .l-footer {
@@ -153,8 +237,56 @@
     text-align: center;
     width: 100%;
   }
+  
+  .l-sup {
+    font-size: 0.9rem;
+    vertical-align: super;
+  }
 }
 
+@media screen and (min-width:821px) {
+  .l-head-2 {
+    color: azure;
+    font-weight: 400;
+    margin-right: 12rem;
+    position: absolute;
+    top: 2rem;
+  }
+  
+  .l-sup {
+    font-size: 1rem;
+    vertical-align: super;
+  }
+  
+  .l-head-1 {
+    color: azure;
+    font-weight: 350;
+    font-size: 3.5rem;
+    margin-right: 5rem;
+    position: absolute;
+    top: 4.2rem;
+  }
+  
+  .line {
+    width: 70%;
+    border-bottom: solid;
+    color: white;
+    left: 4.8rem;
+    position: absolute;
+    top: 7.8rem;
+    width: 70%;
+  }
+  
+  .l-head-3 {
+    color: azure;
+    font-weight: 200;
+    padding-top: 2rem;
+    position: absolute;
+    margin-right: 16rem;
+    top: 7.5rem;
+  }
+  
+}
 .left {
   background-color: blueviolet;
 }
@@ -164,50 +296,21 @@
   flex-direction: column;
 }
 
-.l-head-2 {
-  color: azure;
-  position: absolute;
-  top: 3rem;
-}
-
-.l-head-1 {
-  color: azure;
-  position: absolute;
-  top: 5rem;
-}
-
-.l-head-3 {
-  color: azure;
-  padding-top: 0.5rem;
-  position: absolute;
-  top: 8rem;
-}
-
 .l-description {
   color: azure;
   display: flex;
-  font-family: 'Roboto', sans-serif;
-  margin-top: 2.5rem;
-  text-align-last: center;
-  text-align: center;
+  font-weight: 200;
+  margin: 4rem;
 }
 
 .mail-1,.mail-2,.pass-1,.pass-2 {
-  background-color: lightgrey;
-  font-size: 1.5rem;
-  color: grey;
+  background-color: whitesmoke;
+  border: 0.2rem solid whitesmoke;
+  border-bottom-style: groove;
+  font-size: 1rem;
   height: 2.5rem;
-  padding: 0 0.5rem 0.5rem;
+  padding-left: 1rem;
   width: 100%;
-}
-
-.img {
-  display: inline;
-  height: 3%;
-  margin-left: -5%; 
-  position: absolute;
-  vertical-align: middle; 
-  width: 2.5%;
 }
 
 .pass {
@@ -216,20 +319,28 @@
   font-size: 0.85rem;
   font-weight: bold;
   Justify-content: flex-end;
+  margin-bottom: 1rem;
   width: 100%;
 }
 
 .c-submit {
   align-self: center;
-  color:grey;
+  background-color: #DCDCDC	;
+  border-radius: 0.2rem;
+  border: 0.1rem solid lightgray;
+  color: darkgray;
   display: flex;
-  font-size: 1rem;
-  justify-content: center; 
-  width: 50%; 
+  font-size: 0.9rem;
+  font-weight: 500;
+  height: 50%;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.1rem;
+  width: 50%;
 }
 
 .l-foot {
-  display: flow-root;
+  display: flex;
   font-size: 0.9rem;
   justify-content: center;
 }
@@ -239,8 +350,8 @@
 }
 
 .r-head {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 
@@ -253,7 +364,6 @@
   margin: 1rem;
   padding: 2rem 2rem;
   width: 50%;
-    
 }
 
 .txt_field {
@@ -263,7 +373,7 @@
 
 .footer {
   bottom: 0px; 
-  color: grey;
+  color: black;
   display: flex;
   font-size: 0.75rem;
   justify-content: center;
@@ -277,5 +387,16 @@
   float: right;
   padding-right: 1rem;
   padding-top: 1rem;
+}
+
+.eye {
+  color: grey;
+  display: inline;
+  height: 3%;
+  margin-top: 0.6rem;
+  margin-left: -5%; 
+  position: absolute;
+  vertical-align: middle; 
+  width: 2.5%;
 }
 
